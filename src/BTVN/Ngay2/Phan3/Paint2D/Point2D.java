@@ -56,4 +56,27 @@ public class Point2D implements IShape{
     public void zoom(double ratio){
         return;
     }
+
+    // Xoay 1 điểm quanh gốc (0,0)
+    public void rotatePoint(Point2D mid, double alpha){
+        // Tịnh tiến về gốc tọa độ
+        this.x = x - mid.getX();
+        this.y = y - mid.getY();
+        // Xoay quanh gốc (0,0)
+        double newX = x * Math.cos(alpha) - y * Math.sin(alpha);
+        double newY = x * Math.sin(alpha) + y * Math.cos(alpha);
+        // Trả về vị trí cũ
+        this.x = newX + mid.getX();
+        this.y = newY + mid.getY();
+    }
+
+    // Zoom 1 điểm theo gốc (0,0)
+    public void zoomPoint(Point2D mid, double ratio){
+        // Tịnh tiến về gốc tọa độ
+        this.x = x - mid.getX();
+        this.y = y - mid.getY();
+        // Trả về vị trí cũ
+        this.x = x * ratio + mid.getX();
+        this.y = y * ratio + mid.getY();
+    }
 }
