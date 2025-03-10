@@ -1,6 +1,6 @@
 package BTVN.Ngay2.Phan3.Paint2D;
 
-public class Point2D implements IShapeO, IShapeT{
+public class Point2D implements IShape{
 
     private double x;
     private double y;

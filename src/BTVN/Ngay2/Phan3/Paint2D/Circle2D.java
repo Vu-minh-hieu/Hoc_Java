@@ -1,6 +1,6 @@
 package BTVN.Ngay2.Phan3.Paint2D;
 
-public class Circle2D implements IShapeO, IShapeT{
+public class Circle2D implements IShape{
     private Point2D c;
     private double r;
 
@@ -28,7 +28,7 @@ public class Circle2D implements IShapeO, IShapeT{
 
     @Override
     public String toString() {
-        return "Circle2D [c=" + super.toString() + ", r=" + r + "]";
+        return "Circle2D [c=" + c.toString() + ", r=" + r + "]";
     }
 
     @Override
