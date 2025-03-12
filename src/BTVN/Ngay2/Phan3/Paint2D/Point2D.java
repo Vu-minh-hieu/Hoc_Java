@@ -1,6 +1,6 @@
 package BTVN.Ngay2.Phan3.Paint2D;
 
-public class Point2D implements IShape{
+public class Point2D implements IShapeO, IShapeT{
 
     private double x;
     private double y;
@@ -78,5 +78,9 @@ public class Point2D implements IShape{
         // Trả về vị trí cũ
         this.x = x * ratio + mid.getX();
         this.y = y * ratio + mid.getY();
+    }
+
+    public double distance(Point2D p) {
+        return Math.sqrt(Math.pow(this.x - p.x, 2) + Math.pow(this.y - p.y, 2));
     }
 }

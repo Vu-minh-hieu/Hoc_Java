@@ -1,6 +1,6 @@
 package BTVN.Ngay2.Phan3.Paint2D;
 
-public class Line2D implements IShape{
+public class Line2D implements IShapeO, IShapeT{
     private Point2D p1, p2;
 
     public Line2D(Point2D p1, Point2D p2) {
@@ -81,6 +81,7 @@ public class Line2D implements IShape{
         double C = -(A * p1.getX() + B * p1.getY());
         return new double[]{A, B, C};
     }
+
     public Point2D getMidPoint(){
         return new Point2D((p1.getX() + p2.getX()) / 2, (p1.getY() + p2.getY()) / 2);
     }
