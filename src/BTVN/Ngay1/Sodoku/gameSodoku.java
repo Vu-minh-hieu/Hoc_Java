@@ -14,10 +14,6 @@ public class gameSodoku {
     }
     //kiem tra hop le
     public static boolean check(int[][] bang, int hang, int cot, int n) {
-        //kiem tra rong hay khong
-        if(bang[hang][cot] != 0){
-            return false;
-        }
         //kiem tra theo hang va cot
         for (int i = 0; i < 9; i++) {
             if (bang[hang][i] == n || bang[i][cot] == n) {
