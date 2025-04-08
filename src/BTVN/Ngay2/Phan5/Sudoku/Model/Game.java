@@ -1,22 +1,22 @@
-package BTVN.Ngay2.Phan5.Sudoku;
+package BTVN.Ngay2.Phan5.Sudoku.Model;
 
-public class SudokuBoard {
-    private int[][] board;
+public class Game {
+    private Node[][] board;
     private boolean[][] fixedCell;
     private static final int SIZE = 9;
 
-    public SudokuBoard() {
-        this.board = new int[][]{
-                {5, 3, 0, 0, 7, 0, 0, 0, 0},
-                {6, 0, 0, 1, 9, 5, 0, 0, 0},
-                {0, 9, 8, 0, 0, 0, 0, 6, 0},
-                {8, 0, 0, 0, 6, 0, 0, 0, 3},
-                {4, 0, 0, 8, 0, 3, 0, 0, 1},
-                {7, 0, 0, 0, 2, 0, 0, 0, 6},
-                {0, 6, 0, 0, 0, 0, 2, 8, 0},
-                {0, 0, 0, 4, 1, 9, 0, 0, 5},
-                {0, 0, 0, 0, 8, 0, 0, 7, 9}
-        };
+    public Game() {
+        this.board = new Node[SIZE][SIZE];
+        this.fixedCell = new boolean[SIZE][SIZE];
+    }
+
+    public Game(int[][] b) {
+        this.board = new Node[SIZE][SIZE];
+        for (int i = 0; i < SIZE; i++){
+            for (int j = 0; j < SIZE; j++){
+                board[i][j] = new Node(i, j, b[i][j]);
+            }
+        }
         this.fixedCell = new boolean[SIZE][SIZE];
         markFixedCell();
     }
@@ -25,7 +25,7 @@ public class SudokuBoard {
     private void markFixedCell() {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
-                if (board[i][j] != 0) {
+                if (board[i][j].getValue() != 0) {
                     fixedCell[i][j] = true;
                 }
             }
@@ -37,17 +37,6 @@ public class SudokuBoard {
         return fixedCell[row][col];
     }
 
-    // In bang
-    public void show() {
-        System.out.println("SUDOKU GAME");
-        for (int i = 0; i < SIZE; i++) {
-            for (int j = 0; j < SIZE; j++) {
-                System.out.print(board[i][j] + "\t");
-            }
-            System.out.println();
-        }
-    }
-
     // Kiem tra o dien co hop le khong
     public int isValid(int row, int col, int n) {
         // Kiem tra o co dinh
@@ -56,7 +45,7 @@ public class SudokuBoard {
         }
         // Kiem tra theo hang va cot
         for (int i = 0; i < SIZE; i++) {
-            if (board[row][i] == n || board[i][col] == n) {
+            if (board[row][i].getValue() == n || board[i][col].getValue() == n) {
                 return -1;
             }
         }
@@ -65,7 +54,7 @@ public class SudokuBoard {
         int startCol = col - col % 3;
         for (int i = startRow; i < startRow + 3; i++) {
             for (int j = startCol; j < startCol + 3; j++) {
-                if (board[i][j] == n) {
+                if (board[i][j].getValue() == n) {
                     return -1;
                 }
             }
@@ -74,21 +63,33 @@ public class SudokuBoard {
     }
 
     // Dien gia tri
-    public void setNum(int row, int col, int num) {
+    public void setVal(int row, int col, int num) {
         if (!fixedCell[row][col]) {
-            board[row][col] = num;
+            board[row][col].setValue(num);
         }
+    }
+
+    // Lay gia tri hien tai
+    public int getVal(int row, int col) {
+        return board[row][col].getValue();
     }
 
     // Kiem tra game da thang hay chua
     public boolean isWin() {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
-                if (board[i][j] == 0) {
+                if (board[i][j].getValue() == 0) {
                     return false;
                 }
             }
         }
         return true;
+    }
+    public int getSize(){
+        return SIZE;
+    }
+
+    public Node getNode(int row, int col){
+        return board[row][col];
     }
 }
