@@ -1,10 +1,9 @@
 package BTVN.Ngay2.Phan3.Paint2D;
 
-public class Triangle2D implements IShapeO, IShapeT{
+public class Triangle2D implements IShape{
     private Point2D p1, p2, p3;
 
     public Triangle2D(Point2D p1, Point2D p2, Point2D p3) {
-        super();
         this.p1 = p1;
         this.p2 = p2;
         this.p3 = p3;
@@ -42,11 +41,7 @@ public class Triangle2D implements IShapeO, IShapeT{
 
     @Override
     public double area() {
-        double a = p1.distance(p2);
-        double b = p2.distance(p3);
-        double c = p3.distance(p1);
-        double s = (a + b + c) / 2;
-        return Math.sqrt(s * (s - a) * (s - b) * (s - c));
+        return this.getBoundary().area();
     }
 
     @Override
@@ -88,5 +83,15 @@ public class Triangle2D implements IShapeO, IShapeT{
     public Point2D getMidPoint(){
         return new Point2D((p1.getX() + p2.getX() + p3.getX()) / 3,
                 (p1.getY() + p2.getY() + p3.getY()) / 3);
+    }
+
+    @Override
+    public IShape getCenter() {
+        return null;
+    }
+
+    @Override
+    public IShape getBoundary() {
+        return null;
     }
 }

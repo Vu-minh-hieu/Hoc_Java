@@ -6,4 +6,5 @@ public interface IShapeO {
     public double perimeter();
 
     public double distance();
+
 }
