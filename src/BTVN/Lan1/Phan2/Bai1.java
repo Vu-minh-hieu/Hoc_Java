@@ -1,4 +1,4 @@
-package BTVN.Ngay1.Phan2;
+package BTVN.Lan1.Phan2;
 
 import java.util.Scanner;
 

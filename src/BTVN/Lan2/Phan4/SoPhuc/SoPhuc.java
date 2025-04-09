@@ -1,4 +1,4 @@
-package BTVN.Ngay2.Phan4.SoPhuc;
+package BTVN.Lan2.Phan4.SoPhuc;
 
 public class SoPhuc {
     private double a;

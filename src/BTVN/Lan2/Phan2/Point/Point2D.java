@@ -1,4 +1,4 @@
-package BTVN.Ngay2.Phan2.Point;
+package BTVN.Lan2.Phan2.Point;
 
 public class Point2D {
     private double x;

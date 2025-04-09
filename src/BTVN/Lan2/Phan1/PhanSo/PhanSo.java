@@ -1,4 +1,4 @@
-package BTVN.Ngay2.Phan1.PhanSo;
+package BTVN.Lan2.Phan1.PhanSo;
 
 public class PhanSo {
     private int ts;

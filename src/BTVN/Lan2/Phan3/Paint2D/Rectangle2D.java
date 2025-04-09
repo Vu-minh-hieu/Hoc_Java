@@ -1,4 +1,4 @@
-package BTVN.Ngay2.Phan3.Paint2D;
+package BTVN.Lan2.Phan3.Paint2D;
 
 public class Rectangle2D implements IShape{
     private Point2D[] Points;

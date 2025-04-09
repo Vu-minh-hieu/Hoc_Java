@@ -1,12 +1,12 @@
-package BTVN.Ngay2.Phan5.Sudoku.Controller;
+package BTVN.Lan2.Phan5.Sudoku.Controller;
 
-import BTVN.Ngay2.Phan5.Sudoku.Model.Game;
-import BTVN.Ngay2.Phan5.Sudoku.Model.Node;
-import BTVN.Ngay2.Phan5.Sudoku.View.GameView;
+import BTVN.Lan2.Phan5.Sudoku.Model.Game;
+import BTVN.Lan2.Phan5.Sudoku.Model.Node;
+import BTVN.Lan2.Phan5.Sudoku.View.GameView;
 
 import java.util.Stack;
 
-public class GameControl {
+public class GameControl implements ControlG{
     private Game game;
     private GameView view;
     private Stack<Node> undo;
@@ -20,6 +20,7 @@ public class GameControl {
     }
 
     //Quay lai buoc truoc
+    @Override
     public void undo(){
         if (undo.isEmpty()) {
             System.out.println("Khong co buoc nao de undo!");
@@ -33,6 +34,7 @@ public class GameControl {
     }
 
     //Tro lai buoc truoc khi undo
+    @Override
     public void redo(){
         if (redo.isEmpty()) {
             System.out.println("Khong co buoc nao de redo!");
@@ -46,6 +48,7 @@ public class GameControl {
     }
 
     // Bat dau choi
+    @Override
     public void play() {
         //init(game);
         System.out.println("Choi game di bro :3");

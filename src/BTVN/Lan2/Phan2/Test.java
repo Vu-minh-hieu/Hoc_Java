@@ -1,7 +1,7 @@
-package BTVN.Ngay2.Phan2;
+package BTVN.Lan2.Phan2;
 
-import BTVN.Ngay2.Phan2.Point.Point2D;
-import BTVN.Ngay2.Phan2.Point.Point3D;
+import BTVN.Lan2.Phan2.Point.Point2D;
+import BTVN.Lan2.Phan2.Point.Point3D;
 
 import java.util.ArrayList;
 

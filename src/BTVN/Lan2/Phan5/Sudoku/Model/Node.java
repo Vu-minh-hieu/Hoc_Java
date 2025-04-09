@@ -1,4 +1,4 @@
-package BTVN.Ngay2.Phan5.Sudoku.Model;
+package BTVN.Lan2.Phan5.Sudoku.Model;
 
 public class Node {
     private int x, y, value, oldValue;

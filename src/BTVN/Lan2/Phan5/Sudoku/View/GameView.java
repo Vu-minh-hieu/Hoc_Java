@@ -1,6 +1,6 @@
-package BTVN.Ngay2.Phan5.Sudoku.View;
+package BTVN.Lan2.Phan5.Sudoku.View;
 
-import BTVN.Ngay2.Phan5.Sudoku.Model.Game;
+import BTVN.Lan2.Phan5.Sudoku.Model.Game;
 import java.util.Scanner;
 
 public class GameView {

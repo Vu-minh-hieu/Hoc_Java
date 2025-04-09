@@ -1,11 +1,11 @@
-package BTVN.Ngay2.Phan3;
+package BTVN.Lan2.Phan3;
 
-import BTVN.Ngay2.Phan3.Paint2D.Circle2D;
-import BTVN.Ngay2.Phan3.Paint2D.IShape;
-import BTVN.Ngay2.Phan3.Paint2D.Line2D;
-import BTVN.Ngay2.Phan3.Paint2D.Point2D;
-import BTVN.Ngay2.Phan3.Paint2D.Triangle2D;
-import BTVN.Ngay2.Phan3.Paint2D.Rectangle2D;
+import BTVN.Lan2.Phan3.Paint2D.Circle2D;
+import BTVN.Lan2.Phan3.Paint2D.IShape;
+import BTVN.Lan2.Phan3.Paint2D.Line2D;
+import BTVN.Lan2.Phan3.Paint2D.Point2D;
+import BTVN.Lan2.Phan3.Paint2D.Triangle2D;
+import BTVN.Lan2.Phan3.Paint2D.Rectangle2D;
 
 public class Test {
     public static void main(String[] args) {

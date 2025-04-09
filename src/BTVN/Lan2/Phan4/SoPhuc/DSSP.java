@@ -1,6 +1,4 @@
-package BTVN.Ngay2.Phan4.SoPhuc;
-
-import BTVN.Ngay2.Phan1.PhanSo.PhanSo;
+package BTVN.Lan2.Phan4.SoPhuc;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
-package BTVN.Ngay2.Phan1;
+package BTVN.Lan2.Phan1;
 
-import BTVN.Ngay2.Phan1.PhanSo.PhanSo;
-import BTVN.Ngay2.Phan1.PhanSo.TapHopPS;
+import BTVN.Lan2.Phan1.PhanSo.PhanSo;
+import BTVN.Lan2.Phan1.PhanSo.TapHopPS;
 
 public class Test {
     public static void main (String[] arg){

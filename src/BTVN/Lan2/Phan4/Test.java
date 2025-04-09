@@ -1,7 +1,7 @@
-package BTVN.Ngay2.Phan4;
+package BTVN.Lan2.Phan4;
 
-import BTVN.Ngay2.Phan4.SoPhuc.SoPhuc;
-import BTVN.Ngay2.Phan4.SoPhuc.DSSP;
+import BTVN.Lan2.Phan4.SoPhuc.SoPhuc;
+import BTVN.Lan2.Phan4.SoPhuc.DSSP;
 
 public class Test {
     public static void main (String[] arg){

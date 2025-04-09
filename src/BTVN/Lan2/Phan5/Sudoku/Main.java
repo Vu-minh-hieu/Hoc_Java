@@ -1,8 +1,8 @@
-package BTVN.Ngay2.Phan5.Sudoku;
+package BTVN.Lan2.Phan5.Sudoku;
 
-import BTVN.Ngay2.Phan5.Sudoku.Model.Game;
-import BTVN.Ngay2.Phan5.Sudoku.View.GameView;
-import BTVN.Ngay2.Phan5.Sudoku.Controller.GameControl;
+import BTVN.Lan2.Phan5.Sudoku.Model.Game;
+import BTVN.Lan2.Phan5.Sudoku.View.GameView;
+import BTVN.Lan2.Phan5.Sudoku.Controller.GameControl;
 
 public class Main {
     public static void main(String[] args) {

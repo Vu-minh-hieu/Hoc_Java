@@ -1,4 +1,4 @@
-package BTVN.Ngay1.Sodoku;
+package BTVN.Lan1.Sodoku;
 
 import java.util.Scanner;
 

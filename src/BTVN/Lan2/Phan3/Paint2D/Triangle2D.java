@@ -1,4 +1,4 @@
-package BTVN.Ngay2.Phan3.Paint2D;
+package BTVN.Lan2.Phan3.Paint2D;
 
 public class Triangle2D implements IShape{
     private Point2D p1, p2, p3;

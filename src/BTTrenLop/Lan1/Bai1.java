@@ -1,4 +1,4 @@
-package BTTrenLop.Ngay1;
+package BTTrenLop.Lan1;
 //ax+7y=-10
 //2x-by=c
 public class Bai1 {

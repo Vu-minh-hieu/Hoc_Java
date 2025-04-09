@@ -1,4 +1,4 @@
-package BTVN.Ngay2.Phan3.Paint2D;
+package BTVN.Lan2.Phan3.Paint2D;
 
 public class Point2D implements IShape{
 

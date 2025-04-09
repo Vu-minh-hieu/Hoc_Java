@@ -1,4 +1,4 @@
-package BTTrenLop.Ngay1;
+package BTTrenLop.Lan1;
 
 public class Bai4 {
     public static void main(String[] args){
