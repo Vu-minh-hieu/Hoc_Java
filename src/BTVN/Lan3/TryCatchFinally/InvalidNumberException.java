@@ -1,4 +1,4 @@
-package BTVN.Ngay3.TryCatchFinally;
+package BTVN.Lan3.TryCatchFinally;
 
 public class InvalidNumberException extends Exception {
 
